@@ -11,7 +11,7 @@
 			<router-link v-for="(item, index) in ad" :key="index" tag="li" :to="'/detail/' + item.id">
 				<h3 :class="'color-' + index">{{item.title}}</h3>
 				<p>{{item.description}}</p>
-				<img :src="'img/ad/' + item.url"  alt="">
+				<img :src="'/public/img/ad/' + item.url"  alt="">
 			</router-link>
 		</ul>
 		<!-- 猜你喜欢 -->
