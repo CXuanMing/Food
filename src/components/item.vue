@@ -1,7 +1,7 @@
 <template>
 	<div class="item">
 		<router-link class="item-container"  :to="'/detail/' + data.id" tag="div">
-			<img :src="'./img/list/' + data.img" alt="">
+			<img :src="'/public/img/list/' + data.img" alt="">
 			<div class="content">
 				<h3>{{data.title}}</h3>
 				<p>
