@@ -2,7 +2,7 @@
 	<div class="home">
 		<ul class="type-list">
 			<router-link v-for="(item, index) in types" :key="index" :to="'/list/' + item.id" tag="li">
-				<img :src="'/img/icon/' + item.img + '.png'"  alt="">
+				<img :src="'/public/img/icon/' + item.img + '.png'"  alt="">
 				<p>{{item.text}}</p>
 			</router-link>
 		</ul>
@@ -116,7 +116,7 @@
 		},
 		created() {
 			this.$http
-				.get("../public/data/home.json")
+				.get("/public/data/home.json")
 				.then(({ data }) => {
 					this.ad = data.ad;
 					this.list = data.list;
