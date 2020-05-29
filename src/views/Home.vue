@@ -2,7 +2,7 @@
 	<div class="home">
 		<ul class="type-list">
 			<router-link v-for="(item, index) in types" :key="index" :to="'/list/' + item.id" tag="li">
-				<img :src="'/public/img/icon/' + item.img + '.png'"  alt="">
+				<img :src="'/img/icon/' + item.img + '.png'"  alt="">
 				<p>{{item.text}}</p>
 			</router-link>
 		</ul>
@@ -11,7 +11,7 @@
 			<router-link v-for="(item, index) in ad" :key="index" tag="li" :to="'/detail/' + item.id">
 				<h3 :class="'color-' + index">{{item.title}}</h3>
 				<p>{{item.description}}</p>
-				<img :src="'/public/img/ad/' + item.url"  alt="">
+				<img :src="'/img/ad/' + item.url"  alt="">
 			</router-link>
 		</ul>
 		<!-- 猜你喜欢 -->
