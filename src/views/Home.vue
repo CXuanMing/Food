@@ -116,7 +116,7 @@
 		},
 		created() {
 			this.$http
-				.get("/data/home.json")
+				.get("../data/home.json")
 				.then(({ data }) => {
 					this.ad = data.ad;
 					this.list = data.list;
